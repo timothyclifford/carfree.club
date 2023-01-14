@@ -1,0 +1,67 @@
+Features
+
+- Savings calculator
+- Carbon footprint calculator
+- Journey tracker
+- Forum
+- FAQs
+- Blog
+- Partners
+
+<p className="mb-5">
+    Do you enjoy sitting in traffic for hours? What about being late
+    because it took you so long to find a car park? Or spending 1000s of
+    dollars on registration, insurance, servicing, fuel and numerous other
+    car related expenses?
+</p>
+<p className="mb-5">
+    Many of us would love to never have to sit in traffic or battle for a
+    car park again. We&apos;d also be very happy with an extra 20% in our
+    bank account each year. But when we contemplate life without a car, it
+    seems unrealistic and scary.
+</p>
+<p className="mb-5">
+    Well we&apos;re here to tell you it&apos;s not and that it&apos;s
+    actually MUCH easier than you probably think.
+</p>
+<p className="mb-5">
+    Do you own a car? Maybe there&apos;s even 2 or more sitting in your
+    driveway?
+</p>
+<p className="mb-5">
+    It&apos;s not your fault! We&apos;re conditioned to see cars as a
+    normal and necessary part of our everyday lives. The goal of Car Free
+    Club is to show you that it&apos;s actually much easier than you think
+    to live without owning a car, and if you&apos;re interested, help you
+    along your journey.
+</p>
+<p className="mb-5">
+    I used to be just like you... I loved my cars, it was my pride and
+    joy. I drove EVERYWHERE - regardless of how near or far - never really
+    considering how much money it was costing me, the impact it was having
+    on my health or the pollution I was producing.
+</p>
+<p className="mb-5">
+    Then something clicked. A friend challenged my to live car free for a
+    month. At the beginning I was terrified of giving up my car and the
+    freedom and convenience it provided me. But after a couple of weeks of
+    public transport, riding my bike and walking places I realised owning
+    a car wasn&apos;t freedom, it was actually having a negative impact on
+    my wallet and happiness in general.
+</p>
+<p className="mb-5">
+    So here&apos;s my challenge to you... Give it a try!
+</p>
+<p className="mb-5">
+    I&apos;m not suggesting you wake up tomorrow and sell your car, but
+    there&apos;s so many ways you can get started quickly and easily.
+</p>
+{/* We&apos;re constantly bombarded with
+    advertising showing cars being driven along winding country roads, or
+    along deserted sand dunes */}
+
+    <p>I don&apos;t feel safe riding a bike </p>
+      <p>I&apos;m not fit enough </p>
+      <p>I&apos;ll just use an EV </p>
+      <p>I need a car to transport my shopping </p>
+      <p>I need to drive long distances</p>
