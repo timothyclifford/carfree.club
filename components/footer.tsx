@@ -1,19 +1,25 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
       <div className="mx-auto max-w-screen-xl">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="/" className="flex items-center">
-              <img
+            <Link href="/" className="flex items-center">
+              <Image
                 src="/favicon.png"
                 className="mr-3 h-8"
                 alt="Car Free Club Logo"
-              />
+                width={64}
+                height={64}
+                style={{ objectFit: "contain", objectPosition: "right center" }}
+              ></Image>
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Car Free Club
               </span>
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
@@ -22,19 +28,19 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="/get-started" className="hover:underline">
+                  <Link href="/get-started" className="hover:underline">
                     Get started
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/car-free-calculator" className="hover:underline">
+                  <Link href="/car-free-calculator" className="hover:underline">
                     Car Free Calculator
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/why-live-car-free" className="hover:underline">
+                  <Link href="/why-live-car-free" className="hover:underline">
                     Why live car free?
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -44,17 +50,17 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="/our-story" className="hover:underline ">
+                  <Link href="/our-story" className="hover:underline ">
                     Our story
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="mailto:hello@carfree.club"
                     className="hover:underline"
                   >
                     Contact us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -64,14 +70,17 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-600 dark:text-gray-400">
                 <li className="mb-4">
-                  <a href="/privacy-policy" className="hover:underline">
+                  <Link href="/privacy-policy" className="hover:underline">
                     Privacy policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/terms-and-conditions" className="hover:underline">
+                  <Link
+                    href="/terms-and-conditions"
+                    className="hover:underline"
+                  >
                     Terms &amp; conditions
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

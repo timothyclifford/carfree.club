@@ -1,7 +1,7 @@
 import { Accordion } from "flowbite-react";
 import Head from "next/head";
-import Header from "../components/header";
 import Layout from "../components/layout";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,7 +13,6 @@ export default function Home() {
           content="Helping people save money, get healthy and feel happier by not owning a car."
         />
       </Head>
-      <Header></Header>
       <section className="bg-white dark:bg-gray-900">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
@@ -25,7 +24,7 @@ export default function Home() {
               finger.
             </p>
             <a
-              href="#"
+              href="/get-started"
               className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
               Show me how
@@ -43,14 +42,19 @@ export default function Home() {
               </svg>
             </a>
             <a
-              href="#"
+              href="/why-live-car-free"
               className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
             >
               But why?
             </a>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="/mobility.png" alt="Car Free Club" />
+            <Image
+              src="/mobility.png"
+              alt="Car Free Club"
+              width={1024}
+              height={531}
+            />
           </div>
         </div>
       </section>
@@ -58,13 +62,13 @@ export default function Home() {
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-              We've declared war on car addiction
+              We&apos;ve declared war on car dependency
             </h2>
             <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-              Most of us drive everywhere without realising the impact it's
-              having on our bank balance, long term health and wider community.
-              We're here to show you the alternative - a life free from traffic
-              jams, parking tickets and road rage.
+              Most of us drive everywhere without realising the impact it&apos;s
+              having on our bank balance, long term health and the wider
+              community. We&apos;re here to help you live a life free from
+              traffic jams, parking tickets and road rage.
             </p>
           </div>
           <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
@@ -77,7 +81,7 @@ export default function Home() {
                 a car.
               </p>
               <a
-                href="#"
+                href="/car-free-calculator"
                 className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
               >
                 Show me the money
@@ -88,14 +92,14 @@ export default function Home() {
                 How do I get started?
               </h3>
               <p className="mb-8 space-y-4 font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                It's easier than you think and there's lots of little changes
-                you can try as a first step.
+                It&apos;s easier than you think and there&apos;s lots of little
+                changes you can try as a first step.
               </p>
               <a
-                href="#"
+                href="/get-started"
                 className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
               >
-                Let's do this
+                Let&apos;s do this
               </a>
             </div>
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
@@ -107,10 +111,10 @@ export default function Home() {
                 range of benefits.
               </p>
               <a
-                href="#"
+                href="/why-live-car-free"
                 className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
               >
-                OK I'm interested...
+                Tell me more
               </a>
             </div>
           </div>
@@ -120,12 +124,12 @@ export default function Home() {
         <div className="py-8 px-4 mx-auto max-w-screen-md lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-              What's holding you back?
+              What&apos;s holding you back?
             </h2>
             <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-              The idea of not owning a car can be scary. Here's a few of the
-              typical concerns we hear from people, along with a few suggestions
-              on how to tackle.
+              The idea of not owning a car can be scary. Here&apos;s a few of
+              the typical concerns we hear from people, along with a few
+              suggestions on how to tackle.
             </p>
           </div>
           <Accordion>
@@ -139,19 +143,19 @@ export default function Home() {
                 </p>
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
                   Cars are very convenient for some tasks. At the same time
-                  though, there's many tasks cars aren't really necessary for.
-                  How many times have you driven somewhere which would have
-                  taken you a short time to walk?
+                  though, there&apos;s many tasks cars aren&apos;t really
+                  necessary for. How many times have you driven somewhere which
+                  would have taken you a short time to walk?
                 </p>
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  By owning a car, we're encouraged to drive everywhere by
-                  default, rather than deciding based on what we're doing.
+                  By owning a car, we&apos;re encouraged to drive everywhere by
+                  default, rather than deciding based on what we&apos;re doing.
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
                   Not owning a car on the other hand, allows us to be more
                   flexible with our transport choices, while saving us a bunch
-                  of money because we're only paying for a car when we actually
-                  need it.
+                  of money because we&apos;re only paying for a car when we
+                  actually need it.
                 </p>
               </Accordion.Content>
             </Accordion.Panel>
@@ -184,7 +188,7 @@ export default function Home() {
             </Accordion.Panel>
             <Accordion.Panel>
               <Accordion.Title>
-                Can't I just buy an electic car?
+                Can&apos;t I just buy an electic car?
               </Accordion.Title>
               <Accordion.Content>
                 <p className="mb-2 text-gray-500 dark:text-gray-400">...</p>
@@ -202,7 +206,7 @@ export default function Home() {
             </Accordion.Panel>
             <Accordion.Panel>
               <Accordion.Title>
-                I'm not fit enough to walk places or ride a bike.
+                I&apos;m not fit enough to walk places or ride a bike.
               </Accordion.Title>
               <Accordion.Content>
                 <p className="mb-2 text-gray-500 dark:text-gray-400">...</p>
@@ -211,7 +215,7 @@ export default function Home() {
             </Accordion.Panel>
             <Accordion.Panel>
               <Accordion.Title>
-                I don't feel safe riding a bike.
+                I don&apos;t feel safe riding a bike.
               </Accordion.Title>
               <Accordion.Content>
                 <p className="mb-2 text-gray-500 dark:text-gray-400">...</p>
@@ -225,7 +229,7 @@ export default function Home() {
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-              Don't just take our word for it
+              Don&apos;t just take our word for it
             </h2>
             <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
               Hundreds of people have already made the switch to living car
@@ -235,10 +239,12 @@ export default function Home() {
           <div className="space-y-8 lg:grid lg:grid-cols-4 sm:gap-6 xl:gap-10 lg:space-y-0">
             <div className="flex flex-col p-6 mx-auto max-w-lg text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <div className="flex items-center mb-4 space-x-4">
-                <img
+                <Image
                   className="w-16 h-16 rounded-full"
                   src="/profile-1-250.jpg"
                   alt="Graeme Clifford Headshot"
+                  width={250}
+                  height={250}
                 />
                 <div className="space-y-1 font-medium dark:text-white">
                   <p>
@@ -254,21 +260,24 @@ export default function Home() {
               </div>
               <div className="flex items-center mb-1">
                 <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
-                  It's changed my life
+                  It&apos;s changed my life
                 </h3>
               </div>
               <p className="mb-3 font-light text-gray-500 dark:text-gray-400">
-                At first I was really skeptical. I couldn't imagine a world
-                where I didn't own a car but after a week or two I couldn't
-                believe how easy it was and how much my life had improved.
+                At first I was really skeptical. I couldn&apos;t imagine a world
+                where I didn&apos;t own a car but after a week or two I
+                couldn&apos;t believe how easy it was and how much my life had
+                improved.
               </p>
             </div>
             <div className="flex flex-col p-6 mx-auto max-w-lg text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <div className="flex items-center mb-4 space-x-4">
-                <img
+                <Image
                   className="w-16 h-16 rounded-full"
                   src="/profile-2-250.jpg"
                   alt="Samantha Jackson Headshot"
+                  width={250}
+                  height={250}
                 />
                 <div className="space-y-1 font-medium dark:text-white">
                   <p>
@@ -284,7 +293,7 @@ export default function Home() {
               </div>
               <div className="flex items-center mb-1">
                 <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
-                  I don't miss the traffic
+                  I don&apos;t miss the traffic
                 </h3>
               </div>
               <p className="mb-3 font-light text-gray-500 dark:text-gray-400">
@@ -295,10 +304,12 @@ export default function Home() {
             </div>
             <div className="flex flex-col p-6 mx-auto max-w-lg text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <div className="flex items-center mb-4 space-x-4">
-                <img
+                <Image
                   className="w-16 h-16 rounded-full"
                   src="/profile-3-250.jpg"
                   alt="Malo Edwards Headshot"
+                  width={250}
+                  height={250}
                 />
                 <div className="space-y-1 font-medium dark:text-white">
                   <p>
@@ -314,21 +325,23 @@ export default function Home() {
               </div>
               <div className="flex items-center mb-1">
                 <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
-                  I've saved so much money
+                  I&apos;ve saved so much money
                 </h3>
               </div>
               <p className="mb-3 font-light text-gray-500 dark:text-gray-400">
-                I didn't realise my car was costing me so much money. When
+                I didn&apos;t realise my car was costing me so much money. When
                 adding up what I now pay for public transport, car sharing and
-                taxis, I'm still much better off each month.
+                taxis, I&apos;m still much better off each month.
               </p>
             </div>
             <div className="flex flex-col p-6 mx-auto max-w-lg text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <div className="flex items-center mb-4 space-x-4">
-                <img
+                <Image
                   className="w-16 h-16 rounded-full"
                   src="/profile-4-250.jpg"
                   alt="Miles Bolt Headshot"
+                  width={250}
+                  height={250}
                 />
                 <div className="space-y-1 font-medium dark:text-white">
                   <p>
@@ -344,13 +357,13 @@ export default function Home() {
               </div>
               <div className="flex items-center mb-1">
                 <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
-                  I'm fitter than ever
+                  I&apos;m fitter than ever
                 </h3>
               </div>
               <p className="mb-3 font-light text-gray-500 dark:text-gray-400">
-                Now that I walk or ride most places, I've lost so much weight
-                and I'm feeling healthier than ever. I love being outdoors more
-                often, surrounded by nature and fresh air.
+                Now that I walk or ride most places, I&apos;ve lost so much
+                weight and I&apos;m feeling healthier than ever. I love being
+                outdoors more often, surrounded by nature and fresh air.
               </p>
             </div>
           </div>
