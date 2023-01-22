@@ -2,6 +2,7 @@ import { Accordion } from "flowbite-react";
 import Head from "next/head";
 import Layout from "../components/layout";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
               Save money, fight climate change &amp; give traffic the middle
               finger.
             </p>
-            <a
+            <Link
               href="/get-started"
               className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
@@ -40,13 +41,13 @@ export default function Home() {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="/why-live-car-free"
               className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
             >
               But why?
-            </a>
+            </Link>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <Image
@@ -80,12 +81,12 @@ export default function Home() {
                 Our online tool calculates how much you could save by not owning
                 a car.
               </p>
-              <a
+              <Link
                 href="/car-free-calculator"
                 className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
               >
                 Show me the money
-              </a>
+              </Link>
             </div>
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <h3 className="mb-4 text-2xl font-semibold">
@@ -95,12 +96,12 @@ export default function Home() {
                 It&apos;s easier than you think and there&apos;s lots of little
                 changes you can try as a first step.
               </p>
-              <a
+              <Link
                 href="/get-started"
                 className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
               >
                 Let&apos;s do this
-              </a>
+              </Link>
             </div>
             <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
               <h3 className="mb-4 text-2xl font-semibold">
@@ -110,12 +111,12 @@ export default function Home() {
                 Short answer, yes. A world with less cars is possible and has a
                 range of benefits.
               </p>
-              <a
+              <Link
                 href="/why-live-car-free"
                 className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900"
               >
                 Tell me more
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -418,12 +419,12 @@ export default function Home() {
               </div>
               <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
                 We care about the protection of your data.
-                <a
+                <Link
                   href="#"
                   className="font-medium text-primary-600 dark:text-primary-500 hover:underline"
                 >
                   Read our Privacy Policy
-                </a>
+                </Link>
                 .
               </div>
             </form>

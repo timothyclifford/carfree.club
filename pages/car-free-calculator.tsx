@@ -17,8 +17,8 @@ export default function CarFreeCalculator() {
             Coming soon
           </h1>
           <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-            Well this is embarassing... We're just getting started, check back
-            soon for updates!
+            Well this is embarassing... We&apos;re just getting started, check
+            back soon for updates!
           </p>
         </div>
       </section>
