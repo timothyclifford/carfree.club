@@ -271,7 +271,7 @@ export default function CarFreeCalculator() {
               Results
             </h2>
             <p className="mb-4 font-medium">
-              You currently own {cars} {carsText} and you're planning to{" "}
+              You currently own {cars} {carsText} and you&apos;re planning to{" "}
               {sellCarText} and instead get around by {getAround}.
             </p>
             <p className="mb-8">
