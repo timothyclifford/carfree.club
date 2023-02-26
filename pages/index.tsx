@@ -36,9 +36,9 @@ export default function Home() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 ></path>
               </svg>
             </Link>
@@ -66,10 +66,13 @@ export default function Home() {
               We&apos;ve declared war on car dependency
             </h2>
             <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-              Most of us drive everywhere without realising the impact it&apos;s
-              having on our bank balance, long term health and the wider
-              community. We&apos;re here to help you live a life free from
-              traffic jams, parking tickets and road rage.
+              Most of us drive everywhere automatically without realising the
+              impact this has on our bank balance, long term health, community
+              and the environment.
+              <br />
+              <br />
+              Car Free Club is here to help you live a life free of traffic
+              jams, parking tickets and road rage.
             </p>
           </div>
           <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
@@ -165,17 +168,58 @@ export default function Home() {
                 How do I do my grocery shopping?
               </Accordion.Title>
               <Accordion.Content>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">...</p>
-                <p className="text-gray-500 dark:text-gray-400">...</p>
+                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  There&apos;s a number of alternatives which will save you a
+                  bunch of time and money.
+                </p>
+                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  Walking to the grocery store is a great way to get exercise
+                  and stay healthy. It is also a cost-effective way to travel,
+                  as there is no need to pay for fuel or parking. You also
+                  don&apos;t have to sit in traffic or battle for a parking
+                  spot.
+                </p>
+                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  If you have a big family or a lot to buy, walking may be hard.
+                  Instead, you could doing your grocery shopping online, from
+                  the comfort of your couch and have this delivered on the same
+                  or next day. This is especially convenient for people who have
+                  busy schedules or limited mobility, as it eliminates the need
+                  to travel to the store and carry heavy bags of groceries.
+                </p>
+                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  For people interested in riding a bike, cargo bikes offer a
+                  convenient way to get around quickly while also carrying large
+                  amounts of luggage.
+                </p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  If none of the above are valid options for you, car-sharing
+                  may be a worth. You get all the benefits of a car, but only
+                  pay for it when you actually need it.
+                </p>
               </Accordion.Content>
             </Accordion.Panel>
             <Accordion.Panel>
               <Accordion.Title>
-                I need a car to keep my kids safe.
+                I need a car to keep my family safe.
               </Accordion.Title>
               <Accordion.Content>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">...</p>
-                <p className="text-gray-500 dark:text-gray-400">...</p>
+                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  This is a common misconception. Cars are one of the leading
+                  causes of death worldwide.
+                </p>
+                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  Public transport, riding a bike or walking are all
+                  statistically safer forms of transport due to the fact that
+                  car accidents generally occur at high speeds which are more
+                  likely to be fatal.
+                </p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  The only thing which will increase the safety of your family
+                  is decreasing your risk of being involved in a car accident.
+                  The only way to do this is by reducing your dependence on your
+                  car.
+                </p>
               </Accordion.Content>
             </Accordion.Panel>
             <Accordion.Panel>
@@ -183,8 +227,20 @@ export default function Home() {
                 What about when I go on holiday?
               </Accordion.Title>
               <Accordion.Content>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">...</p>
-                <p className="text-gray-500 dark:text-gray-400">...</p>
+                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  This is when it makes perfect sense to hire a car. If
+                  you&apos;re going camping or off-road - there&apos;s a number
+                  of online options for renting camper vans and RVs.
+                </p>
+                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  Depending on where you live, a train or a bus may be an option
+                  for getting you there too.
+                </p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  The bottom line is, owning a car can cost tens of thousands of
+                  dollars a year. If you had this much extra money - every year
+                  - where would you go on holiday?
+                </p>
               </Accordion.Content>
             </Accordion.Panel>
             <Accordion.Panel>
@@ -192,8 +248,21 @@ export default function Home() {
                 Can&apos;t I just buy an electic car?
               </Accordion.Title>
               <Accordion.Content>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">...</p>
-                <p className="text-gray-500 dark:text-gray-400">...</p>
+                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  While electric cars will have a reduced environmental impact
+                  when compared to combustion engines, these will not solve many
+                  of the fundamental problems which exist with cars today.
+                </p>
+                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  We will continue to see a similar number of people dying and
+                  injured in accidents and the same problems will exist with
+                  traffic, noise, parking and the amount of public space we as a
+                  community sacrifice for cars.
+                </p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  To solve these problems, there needs to be a fundamental shift
+                  in how we think about and prioritise our transport systems.
+                </p>
               </Accordion.Content>
             </Accordion.Panel>
             <Accordion.Panel>
@@ -201,8 +270,14 @@ export default function Home() {
                 But my car is my pride &amp; joy!
               </Accordion.Title>
               <Accordion.Content>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">...</p>
-                <p className="text-gray-500 dark:text-gray-400">...</p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  While cars can be convenient and provide a sense of freedom
+                  and independence, our obsession with cars has negative impacts
+                  on the environment, public health, and social well-being. By
+                  reducing our dependence on cars and promoting alternative
+                  modes of transportation, we can create more sustainable,
+                  healthy, and livable communities.
+                </p>
               </Accordion.Content>
             </Accordion.Panel>
             <Accordion.Panel>
@@ -210,8 +285,15 @@ export default function Home() {
                 I&apos;m not fit enough to walk places or ride a bike.
               </Accordion.Title>
               <Accordion.Content>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">...</p>
-                <p className="text-gray-500 dark:text-gray-400">...</p>
+                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  Maybe not at the moment. But by increasing the amount of walk
+                  or ride gradually, your fitness will quickly improve and
+                  you&apos;ll be travelling larger distances in no time.
+                </p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  The long term health benefits of a more active lifestyle will
+                  also be significant.
+                </p>
               </Accordion.Content>
             </Accordion.Panel>
             <Accordion.Panel>
@@ -219,8 +301,22 @@ export default function Home() {
                 I don&apos;t feel safe riding a bike.
               </Accordion.Title>
               <Accordion.Content>
-                <p className="mb-2 text-gray-500 dark:text-gray-400">...</p>
-                <p className="text-gray-500 dark:text-gray-400">...</p>
+                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  This is the single biggest factor preventing more people from
+                  jumping on their bike more often.
+                </p>
+                <p className="mb-2 text-gray-500 dark:text-gray-400">
+                  Unfortunately our roads have been designed with only cars in
+                  mind. This is changing slowly but the more people riding bikes
+                  and the more people advocating for safer infrastructure for
+                  active transport, the quicker this change will move.
+                </p>
+                <p className="text-gray-500 dark:text-gray-400">
+                  Until we&apos;ve reached a stage where people can ride a bike
+                  without fear of being hit by someone driving distracted or
+                  dangerously, stick to the safest routes and try to plan ahead
+                  to ensure you&apos;re avoiding any especially dangerous roads.
+                </p>
               </Accordion.Content>
             </Accordion.Panel>
           </Accordion>
