@@ -1,19 +1,17 @@
 import { Accordion } from "flowbite-react";
-import Head from "next/head";
 import Layout from "../components/layout";
 import Image from "next/image";
 import Link from "next/link";
+import Meta from "../components/meta";
 
 export default function Home() {
   return (
     <Layout>
-      <Head>
-        <title>Car Free Club</title>
-        <meta
-          name="description"
-          content="Helping people save money, get healthy and feel happier by not owning a car."
-        />
-      </Head>
+      <Meta
+        title="Car Free Club"
+        description="Helping people save money, get healthy and feel happier by going car free."
+        url="https://carfree.club/"
+      ></Meta>
       <section className="bg-white dark:bg-gray-900">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">

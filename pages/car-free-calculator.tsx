@@ -1,6 +1,6 @@
-import Head from "next/head";
 import { PropsWithChildren, useMemo, useState } from "react";
 import Layout from "../components/layout";
+import Meta from "../components/meta";
 import { PageTitle } from "../components/pageTitle";
 
 const FUEL_COST = 70 * 52;
@@ -107,13 +107,11 @@ export default function CarFreeCalculator() {
   }, [walk, ride, pt, carSharing]);
   return (
     <Layout>
-      <Head>
-        <title>Car Free Calculator - Car Free Club</title>
-        <meta
-          name="description"
-          content="Helping people save money, get healthy and feel happier by not owning a car."
-        />
-      </Head>
+      <Meta
+        title="Car Free Calculator - Car Free Club"
+        description="Calculate how much money you could save by driving less or selling your car."
+        url="https://carfree.club/car-free-calculator"
+      ></Meta>
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
           <PageTitle

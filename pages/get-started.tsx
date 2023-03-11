@@ -1,16 +1,14 @@
-import Head from "next/head";
 import Layout from "../components/layout";
+import Meta from "../components/meta";
 
 export default function GetStarted() {
   return (
     <Layout>
-      <Head>
-        <title>Get started - Car Free Club</title>
-        <meta
-          name="description"
-          content="Helping people save money, get healthy and feel happier by not owning a car."
-        />
-      </Head>
+      <Meta
+        title="Get Started - Car Free Club"
+        description="Quick and easy ways to start reducing your car dependency and saving."
+        url="https://carfree.club/get-started"
+      ></Meta>
       <section className="bg-white dark:bg-gray-900"></section>
     </Layout>
   );

@@ -1,17 +1,15 @@
-import Head from "next/head";
 import Layout from "../components/layout";
+import Meta from "../components/meta";
 import { PageTitle } from "../components/pageTitle";
 
 export default function WhyCarFree() {
   return (
     <Layout>
-      <Head>
-        <title>Why live car free? - Car Free Club</title>
-        <meta
-          name="description"
-          content="Helping people save money, get healthy and feel happier by not owning a car."
-        />
-      </Head>
+      <Meta
+        title="Why Live Car Free - Car Free Club"
+        description="Reasons you should consider living a car free life."
+        url="https://carfree.club/why-live-car-free"
+      ></Meta>
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-3xl text-center lg:py-16 lg:px-12">
           <PageTitle title="Why live car free?"></PageTitle>
