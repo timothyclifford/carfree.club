@@ -18,7 +18,7 @@ export default function Navigation() {
         </span>
       </Navbar.Brand>
       <div className="flex items-center lg:order-2">
-        <Button>Get started</Button>
+        <Button href="/get-started">Get started</Button>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
