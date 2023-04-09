@@ -258,9 +258,9 @@ export default function Home() {
                   amounts of public space for parking and roads.
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                  To solve these problems, it's not enough for everyone to buy
-                  an EV, there needs to be a fundamental shift in how we think
-                  about and prioritise our transport systems.
+                  To solve these problems, it&apos;s not enough for everyone to
+                  buy an EV, there needs to be a fundamental shift in how we
+                  think about and prioritise our transport systems.
                 </p>
               </Accordion.Content>
             </Accordion.Panel>
