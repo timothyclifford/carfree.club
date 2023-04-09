@@ -247,19 +247,20 @@ export default function Home() {
               </Accordion.Title>
               <Accordion.Content>
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  While electric cars will have a reduced environmental impact
-                  when compared to combustion engines, these will not solve many
-                  of the fundamental problems which exist with cars today.
+                  Electric cars do have a reduced environmental impact compared
+                  to combustion engines, but these will not solve the other
+                  problems cars cause.
                 </p>
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  We will continue to see a similar number of people dying and
-                  injured in accidents and the same problems will exist with
-                  traffic, noise, parking and the amount of public space we as a
-                  community sacrifice for cars.
+                  Traffic will continue getting worse. Noise pollution will
+                  continue. Cars will continue killing and injuring humans and
+                  wildlife unnecessarily. We will still need to sacrifice huge
+                  amounts of public space for parking and roads.
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                  To solve these problems, there needs to be a fundamental shift
-                  in how we think about and prioritise our transport systems.
+                  To solve these problems, it's not enough for everyone to buy
+                  an EV, there needs to be a fundamental shift in how we think
+                  about and prioritise our transport systems.
                 </p>
               </Accordion.Content>
             </Accordion.Panel>
@@ -269,12 +270,12 @@ export default function Home() {
               </Accordion.Title>
               <Accordion.Content>
                 <p className="text-gray-500 dark:text-gray-400">
-                  While cars can be convenient and provide a sense of freedom
-                  and independence, our obsession with cars has negative impacts
-                  on the environment, public health, and social well-being. By
-                  reducing our dependence on cars and promoting alternative
+                  Cars can be convenient (when you&apos;re not sitting in
+                  traffic), but our obsession with them is negatively impacting
+                  the environment, our health and the livability of our cities.
+                  By reducing our dependence on cars and promoting alternative
                   modes of transportation, we can create more sustainable,
-                  healthy, and livable communities.
+                  healthy, and happy communities.
                 </p>
               </Accordion.Content>
             </Accordion.Panel>
@@ -284,17 +285,17 @@ export default function Home() {
               </Accordion.Title>
               <Accordion.Content>
                 <p className="mb-2 text-gray-500 dark:text-gray-400">
-                  Maybe not at the moment. But by increasing the amount of walk
-                  or ride gradually, your fitness will quickly improve and
-                  you&apos;ll be travelling larger distances in no time.
+                  Maybe not at the moment. But by increasing the amount you walk
+                  or ride gradually, your fitness will improve and you&apos;ll
+                  be travelling larger distances in no time.
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
                   The long term health benefits of a more active lifestyle will
-                  also be significant.
+                  be significant.
                 </p>
               </Accordion.Content>
             </Accordion.Panel>
-            <Accordion.Panel>
+            {/* <Accordion.Panel>
               <Accordion.Title>
                 I don&apos;t feel safe riding a bike.
               </Accordion.Title>
@@ -316,7 +317,7 @@ export default function Home() {
                   to ensure you&apos;re avoiding any especially dangerous roads.
                 </p>
               </Accordion.Content>
-            </Accordion.Panel>
+            </Accordion.Panel> */}
           </Accordion>
         </div>
       </section>
