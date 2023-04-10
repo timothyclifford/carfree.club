@@ -72,9 +72,9 @@ export default function CarFreeCalculator() {
   }, [cars]);
   useMemo(() => {
     if (sellCar) {
-      setSellCarText(cars > 1 ? "sell these" : "sell this");
+      setSellCarText(cars > 1 ? "selling these" : "selling this");
     } else {
-      setSellCarText(cars > 1 ? "keep these" : "keep this");
+      setSellCarText(cars > 1 ? "keeping these" : "keeping this");
     }
   }, [cars, sellCar]);
   useMemo(() => {
@@ -90,11 +90,11 @@ export default function CarFreeCalculator() {
         transport.push("catching public transport");
       }
       if (carSharing) {
-        transport.push("using a car sharing service");
+        transport.push("using car sharing");
       }
-      let transportJoined = "teleporting";
+      let transportJoined = "???";
       for (let option of transport) {
-        if (transportJoined === "teleporting") {
+        if (transportJoined === "???") {
           transportJoined = option;
         } else if (option === transport[transport.length - 1]) {
           transportJoined = `${transportJoined} and ${option}`;
@@ -119,6 +119,25 @@ export default function CarFreeCalculator() {
             subTitle="The car free calculator helps you see how much money you could save by
           selling your car or simply changing how you get around."
           ></PageTitle>
+          <div className="flex flex-col mb-24 p-6 mx-auto max-w-lg text-center bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            {/* <h2 className="mb-4 text-2xl font-semibold">Results</h2> */}
+            <p className="mb-4 font-medium">
+              You own {cars} {carsText}.
+            </p>
+            <p className="mb-4 font-medium">
+              By {sellCarText} and getting around by {getAround}.
+            </p>
+            <p className="mb-8">You will save...</p>
+            <p className="text-3xl font-bold text-blue-700 tracking-tight leading-none">
+              {Intl.NumberFormat("en-AU", {
+                style: "currency",
+                currency: "AUD",
+                maximumSignificantDigits: 3,
+              }).format(savings)}{" "}
+              a year
+            </p>
+          </div>
+
           <div className="flex flex-col max-w-md mx-auto">
             <Row>
               <label
@@ -263,26 +282,6 @@ export default function CarFreeCalculator() {
                 </div>
               </div>
             </Row>
-          </div>
-          <div className="max-w-md mx-auto">
-            <h2 className="mb-4 text-2xl font-bold tracking-tight leading-none">
-              Results
-            </h2>
-            <p className="mb-4 font-medium">
-              You currently own {cars} {carsText} and you&apos;re planning to{" "}
-              {sellCarText} and instead get around by {getAround}.
-            </p>
-            <p className="mb-8">
-              By going car free, you could save yourself...
-            </p>
-            <p className="mb-20 text-xl font-bold tracking-tight leading-none">
-              {Intl.NumberFormat("en-AU", {
-                style: "currency",
-                currency: "AUD",
-                maximumSignificantDigits: 3,
-              }).format(savings)}{" "}
-              per year
-            </p>
           </div>
         </div>
       </section>

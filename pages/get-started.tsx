@@ -11,7 +11,7 @@ export default function GetStarted() {
         url="https://carfree.club/get-started"
       ></Meta>
       <section className="bg-white dark:bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-3xl text-center lg:py-16 lg:px-12">
+        <div className="py-8 px-4 mx-auto max-w-4xl text-center lg:py-16 lg:px-12">
           <PageTitle title="Get Started"></PageTitle>
           <p className="mb-4 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
             ...

@@ -21,7 +21,7 @@ export default function Footer() {
               </span>
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:gap-32 sm:grid-cols-2">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Resources
@@ -64,7 +64,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Boring bits
               </h2>
@@ -83,13 +83,13 @@ export default function Footer() {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2023 Car Free Club
+            © Car Free Club
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <a

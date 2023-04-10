@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Layout from "../components/layout";
 import Meta from "../components/meta";
 import { PageTitle } from "../components/pageTitle";
@@ -11,8 +12,17 @@ export default function OurStory() {
         url="https://carfree.club/our-story"
       ></Meta>
       <section className="bg-white dark:bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-3xl text-center lg:py-16 lg:px-12">
+        <div className="py-8 px-4 mx-auto max-w-4xl text-center lg:py-16 lg:px-12">
           <PageTitle title="Our story"></PageTitle>
+          <p className="mb-8">
+            <Image
+              src="/our-story.jpg"
+              alt="Our Story"
+              width={640}
+              height={431}
+              className="m-auto"
+            ></Image>
+          </p>
           <p className="mb-4 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
             We used to be exactly where you are now. Feeling like there was
             something a bit wrong with how much time and money our cars were
