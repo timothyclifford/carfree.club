@@ -116,8 +116,7 @@ export default function CarFreeCalculator() {
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
           <PageTitle
             title="Car Free Calculator"
-            subTitle="The car free calculator helps you see how much money you could save by
-          selling your car or simply changing how you get around."
+            subTitle="Calculate how much money you could save by changing how you get around."
           ></PageTitle>
           <div className="flex flex-col mb-24 p-6 mx-auto max-w-lg text-center bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
             {/* <h2 className="mb-4 text-2xl font-semibold">Results</h2> */}
