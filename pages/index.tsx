@@ -61,12 +61,11 @@ export default function Home() {
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-              We&apos;ve declared war on car dependency
+              We&apos;re here to set you free
             </h2>
             <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-              Most of us drive everywhere automatically without realising the
-              impact this has on our bank balance, long term health, community
-              and the environment.
+              Most of us drive everywhere without realising the impact this has
+              on our bank balance, health, community and the environment.
               <br />
               <br />
               Car Free Club is here to help you live a life free of traffic
@@ -130,8 +129,8 @@ export default function Home() {
             </h2>
             <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
               The idea of not owning a car can be scary. Here&apos;s a few of
-              the typical concerns we hear from people, along with a few
-              suggestions on how to tackle.
+              the concerns we usually hear from people, along with suggestions
+              to help deal with each.
             </p>
           </div>
           <Accordion>
